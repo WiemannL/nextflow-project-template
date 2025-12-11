@@ -1,119 +1,100 @@
-Dec-11 10:50:02.366 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_severity --mtag_dir /home/law22/data/LIV/MTAG/mtag
-Dec-11 10:50:02.457 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Dec-11 10:50:02.477 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Dec-11 10:50:02.498 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Dec-11 10:50:02.499 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Dec-11 10:50:02.502 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Dec-11 10:50:02.512 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Dec-11 10:50:02.529 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
-Dec-11 10:50:02.531 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
-Dec-11 10:50:02.555 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
-Dec-11 10:50:02.559 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
-Dec-11 10:50:02.570 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Dec-11 10:50:03.074 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Dec-11 10:50:03.086 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [desperate_curie] DSL2 - revision: e8a1a31f50
-Dec-11 10:50:03.087 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Dec-11 10:50:03.088 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Dec-11 10:50:03.132 [main] DEBUG nextflow.Session - Session UUID: 294522b0-88d3-4e85-a1f3-286d942675e5
-Dec-11 10:50:03.133 [main] DEBUG nextflow.Session - Run name: desperate_curie
-Dec-11 10:50:03.133 [main] DEBUG nextflow.Session - Executor pool size: 180
-Dec-11 10:50:03.140 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Dec-11 10:50:03.146 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-11 10:50:03.165 [main] DEBUG nextflow.cli.CmdRun - 
+Dec-11 15:36:21.242 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_hospitalisation.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_hospitalisation --mtag_dir /home/law22/data/LIV/MTAG/mtag
+Dec-11 15:36:21.342 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Dec-11 15:36:21.362 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Dec-11 15:36:21.384 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-11 15:36:21.384 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-11 15:36:21.387 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-11 15:36:21.397 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-11 15:36:21.414 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 15:36:21.415 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 15:36:21.441 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
+Dec-11 15:36:21.444 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
+Dec-11 15:36:21.455 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-11 15:36:21.964 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Dec-11 15:36:21.976 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [marvelous_hopper] DSL2 - revision: 7d1c428598
+Dec-11 15:36:21.977 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-11 15:36:21.977 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-11 15:36:22.022 [main] DEBUG nextflow.Session - Session UUID: e79f4584-cf30-44c0-a111-8a2cfd7c5cbf
+Dec-11 15:36:22.022 [main] DEBUG nextflow.Session - Run name: marvelous_hopper
+Dec-11 15:36:22.022 [main] DEBUG nextflow.Session - Executor pool size: 180
+Dec-11 15:36:22.030 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-11 15:36:22.035 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-11 15:36:22.055 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (12:27 BST)
   System: Linux 6.14.0-33-generic
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-125.04
   Encoding: UTF-8 (UTF-8)
-  Process: 623031@landmark-lv-02 [10.57.0.136]
-  CPUs: 180 - Mem: 377.6 GB (302.6 GB) - Swap: 0 (0)
-Dec-11 10:50:03.184 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
-Dec-11 10:50:03.202 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Dec-11 10:50:03.210 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Dec-11 10:50:03.215 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Dec-11 10:50:03.238 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Dec-11 10:50:03.246 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
-Dec-11 10:50:03.334 [main] DEBUG nextflow.Session - Session start
-Dec-11 10:50:03.569 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Dec-11 10:50:03.581 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
+  Process: 682042@landmark-lv-02 [10.57.0.136]
+  CPUs: 180 - Mem: 377.6 GB (259.7 GB) - Swap: 0 (0)
+Dec-11 15:36:22.073 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
+Dec-11 15:36:22.091 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-11 15:36:22.100 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-11 15:36:22.104 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Dec-11 15:36:22.127 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-11 15:36:22.135 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
+Dec-11 15:36:22.217 [main] DEBUG nextflow.Session - Session start
+Dec-11 15:36:22.543 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-11 15:36:22.555 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
 ===================================
-GWAS CSV     : /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv
-Output dir   : /home/law22/data/LIV/MTAG/Results/COVID_severity
+GWAS CSV     : /home/law22/data/LIV/MTAG/Input_files/COVID_hospitalisation.csv
+Output dir   : /home/law22/data/LIV/MTAG/Results/COVID_hospitalisation
 MTAG code    : /home/law22/data/LIV/MTAG/mtag
 
-Dec-11 10:50:03.705 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Dec-11 10:50:03.705 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-11 10:50:03.710 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Dec-11 10:50:03.716 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=180; memory=377.6 GB; capacity=180; pollInterval=100ms; dumpInterval=5m
-Dec-11 10:50:03.718 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Dec-11 10:50:03.741 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_MTAG': maxForks=0; fair=false; array=0
-Dec-11 10:50:03.767 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
-Dec-11 10:50:03.769 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Dec-11 10:50:03.774 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_MTAG
-Dec-11 10:50:03.774 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_8c3ee602966541b8: /home/law22/data/LIV/scripts/nextflow-project-template/main.nf
-Dec-11 10:50:03.775 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Dec-11 10:50:03.775 [main] DEBUG nextflow.Session - Session await
-Dec-11 10:50:03.971 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (AD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/3c/637819348bf8ec9449e6a7733739bb
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/AD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/3c/637819348bf8ec9449e6a7733739bb
-Dec-11 10:50:03.976 [Task submitter] INFO  nextflow.processor.TaskProcessor - [3c/637819] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/AD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/3c/637819348bf8ec9449e6a7733739bb -- Error is ignored
-Dec-11 10:50:03.982 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (CBV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/c2/c47f180273be05cfa89d2e1d7f8dc7
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/CBV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/c2/c47f180273be05cfa89d2e1d7f8dc7
-Dec-11 10:50:03.982 [Task submitter] INFO  nextflow.processor.TaskProcessor - [c2/c47f18] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/CBV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/c2/c47f180273be05cfa89d2e1d7f8dc7 -- Error is ignored
-Dec-11 10:50:03.984 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HV_R); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/14/ad65747b8ce480e3365ec33aa15182
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HV_R_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/14/ad65747b8ce480e3365ec33aa15182
-Dec-11 10:50:03.984 [Task submitter] INFO  nextflow.processor.TaskProcessor - [14/ad6574] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HV_R_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/14/ad65747b8ce480e3365ec33aa15182 -- Error is ignored
-Dec-11 10:50:03.987 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (SCV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/2a/00f5a8cd62d751485afa893f0208c4
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/SCV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/2a/00f5a8cd62d751485afa893f0208c4
-Dec-11 10:50:03.987 [Task submitter] INFO  nextflow.processor.TaskProcessor - [2a/00f5a8] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/SCV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/2a/00f5a8cd62d751485afa893f0208c4 -- Error is ignored
-Dec-11 10:50:03.989 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (PD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/5d/809b88a278ecd0a1eae897b94242d1
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/PD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/5d/809b88a278ecd0a1eae897b94242d1
-Dec-11 10:50:03.990 [Task submitter] INFO  nextflow.processor.TaskProcessor - [5d/809b88] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/PD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/5d/809b88a278ecd0a1eae897b94242d1 -- Error is ignored
-Dec-11 10:50:03.991 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (LBD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/c0/194db46ab021d6c66f57309d1c9117
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/LBD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/c0/194db46ab021d6c66f57309d1c9117
-Dec-11 10:50:03.992 [Task submitter] INFO  nextflow.processor.TaskProcessor - [c0/194db4] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/LBD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/c0/194db46ab021d6c66f57309d1c9117 -- Error is ignored
-Dec-11 10:50:03.994 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (FTD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/e5/069bbc1405c89ba00ea117e105e4e7
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/FTD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/e5/069bbc1405c89ba00ea117e105e4e7
-Dec-11 10:50:03.994 [Task submitter] INFO  nextflow.processor.TaskProcessor - [e5/069bbc] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/FTD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/e5/069bbc1405c89ba00ea117e105e4e7 -- Error is ignored
-Dec-11 10:50:03.996 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (EPI); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/38/2e591da8deb89ff799807a31c5f04c
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/EPI_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/38/2e591da8deb89ff799807a31c5f04c
-Dec-11 10:50:03.997 [Task submitter] INFO  nextflow.processor.TaskProcessor - [38/2e591d] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/EPI_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/38/2e591da8deb89ff799807a31c5f04c -- Error is ignored
-Dec-11 10:50:03.999 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (ICV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/cb/bde54fbc9d241edcfe819d3424d886
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/ICV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/cb/bde54fbc9d241edcfe819d3424d886
-Dec-11 10:50:03.999 [Task submitter] INFO  nextflow.processor.TaskProcessor - [cb/bde54f] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/ICV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/cb/bde54fbc9d241edcfe819d3424d886 -- Error is ignored
-Dec-11 10:50:04.000 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (NDD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/c5/9abb5045ffdc82425c14ba6239051e
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/NDD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/c5/9abb5045ffdc82425c14ba6239051e
-Dec-11 10:50:04.001 [Task submitter] INFO  nextflow.processor.TaskProcessor - [c5/9abb50] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/NDD_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/c5/9abb5045ffdc82425c14ba6239051e -- Error is ignored
-Dec-11 10:50:04.003 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HV_L); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/87/1dfb598d26e79af14f2fc18e0981a3
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HV_L_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/87/1dfb598d26e79af14f2fc18e0981a3
-Dec-11 10:50:04.003 [Task submitter] INFO  nextflow.processor.TaskProcessor - [87/1dfb59] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HV_L_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/87/1dfb598d26e79af14f2fc18e0981a3 -- Error is ignored
-Dec-11 10:50:04.005 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (ALS); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/b8/f344bd184003402fc45a2539f85e47
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/ALS_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/b8/f344bd184003402fc45a2539f85e47
-Dec-11 10:50:04.005 [Task submitter] INFO  nextflow.processor.TaskProcessor - [b8/f344bd] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/ALS_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/b8/f344bd184003402fc45a2539f85e47 -- Error is ignored
-Dec-11 10:50:04.007 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/4a/6ccea8fc2b60952124bcae06cf24c8
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/4a/6ccea8fc2b60952124bcae06cf24c8
-Dec-11 10:50:04.007 [Task submitter] INFO  nextflow.processor.TaskProcessor - [4a/6ccea8] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HV_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/4a/6ccea8fc2b60952124bcae06cf24c8 -- Error is ignored
-Dec-11 10:50:04.009 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HL); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/5f/cd9b072f56ac404712f86e43aa27f4
-  error [nextflow.exception.IllegalFileException]: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HL_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/5f/cd9b072f56ac404712f86e43aa27f4
-Dec-11 10:50:04.009 [Task submitter] INFO  nextflow.processor.TaskProcessor - [5f/cd9b07] NOTE: File `/home/law22/data/LIV/MTAG/Results/COVID_severity/HL_MTAG/**` is outside the scope of the process work directory: /home/law22/data/LIV/scripts/nextflow-project-template/work/5f/cd9b072f56ac404712f86e43aa27f4 -- Error is ignored
-Dec-11 10:51:41.869 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
-Dec-11 10:51:41.886 [main] DEBUG nextflow.Session - Session await > all processes finished
-Dec-11 10:51:41.887 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Dec-11 10:51:41.887 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Dec-11 10:51:41.892 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=14; ignoredCount=14; cachedCount=0; pendingCount=14; submittedCount=0; runningCount=-14; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=-14; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Dec-11 10:51:42.005 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Dec-11 10:51:42.015 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Dec-11 15:36:22.681 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-11 15:36:22.681 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-11 15:36:22.687 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-11 15:36:22.693 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=180; memory=377.6 GB; capacity=180; pollInterval=100ms; dumpInterval=5m
+Dec-11 15:36:22.694 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Dec-11 15:36:22.717 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_MTAG': maxForks=0; fair=false; array=0
+Dec-11 15:36:22.743 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
+Dec-11 15:36:22.744 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Dec-11 15:36:22.749 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_MTAG
+Dec-11 15:36:22.750 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_54e00de22a50c14b: /home/law22/data/LIV/scripts/nextflow-project-template/main.nf
+Dec-11 15:36:22.750 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-11 15:36:22.750 [main] DEBUG nextflow.Session - Session await
+Dec-11 15:36:22.771 [Actor Thread 7] ERROR nextflow.extension.OperatorImpl - @unknown
+java.lang.NullPointerException: Cannot invoke method tokenize() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:113)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_54e00de22a50c14b$_runScript_closure2.doCall(Script_54e00de22a50c14b:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.extension.MapOp$_apply_closure1.doCall(MapOp.groovy:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
+	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
+	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
+	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
+	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
+	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Dec-11 15:36:22.779 [Actor Thread 7] DEBUG nextflow.Session - Session aborted -- Cause: Cannot invoke method tokenize() on null object
+Dec-11 15:36:22.793 [Actor Thread 7] DEBUG nextflow.Session - The following nodes are still active:
+[process] RUN_MTAG
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Dec-11 15:36:22.796 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-11 15:36:22.796 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-11 15:36:22.797 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Dec-11 15:36:22.801 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-11 15:36:22.988 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-11 15:36:23.000 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

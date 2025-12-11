@@ -1,177 +1,140 @@
-Dec-11 10:42:41.718 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_severity --mtag_dir /home/law22/data/LIV/MTAG/mtag
-Dec-11 10:42:41.808 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Dec-11 10:42:41.827 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Dec-11 10:42:41.848 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Dec-11 10:42:41.849 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Dec-11 10:42:41.851 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Dec-11 10:42:41.861 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Dec-11 10:42:41.877 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
-Dec-11 10:42:41.879 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
-Dec-11 10:42:41.904 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
-Dec-11 10:42:41.907 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
-Dec-11 10:42:41.919 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Dec-11 10:42:42.422 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Dec-11 10:42:42.433 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [evil_baekeland] DSL2 - revision: 07d7bc0d50
-Dec-11 10:42:42.434 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Dec-11 10:42:42.435 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Dec-11 10:42:42.478 [main] DEBUG nextflow.Session - Session UUID: 83d0d539-9879-4080-90ad-77ce8ef7bc50
-Dec-11 10:42:42.478 [main] DEBUG nextflow.Session - Run name: evil_baekeland
-Dec-11 10:42:42.479 [main] DEBUG nextflow.Session - Executor pool size: 180
-Dec-11 10:42:42.486 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Dec-11 10:42:42.491 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-11 10:42:42.509 [main] DEBUG nextflow.cli.CmdRun - 
+Dec-11 10:51:45.141 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_severity --mtag_dir /home/law22/data/LIV/MTAG/mtag
+Dec-11 10:51:45.233 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Dec-11 10:51:45.253 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Dec-11 10:51:45.275 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-11 10:51:45.276 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-11 10:51:45.278 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-11 10:51:45.289 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-11 10:51:45.306 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 10:51:45.308 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 10:51:45.332 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
+Dec-11 10:51:45.335 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
+Dec-11 10:51:45.347 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-11 10:51:45.855 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Dec-11 10:51:45.867 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [reverent_edison] DSL2 - revision: adc92b317f
+Dec-11 10:51:45.868 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-11 10:51:45.868 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-11 10:51:45.912 [main] DEBUG nextflow.Session - Session UUID: 1efb51d2-e36f-4f6a-999f-0462bea31fc1
+Dec-11 10:51:45.912 [main] DEBUG nextflow.Session - Run name: reverent_edison
+Dec-11 10:51:45.913 [main] DEBUG nextflow.Session - Executor pool size: 180
+Dec-11 10:51:45.920 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-11 10:51:45.925 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-11 10:51:45.944 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (12:27 BST)
   System: Linux 6.14.0-33-generic
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-125.04
   Encoding: UTF-8 (UTF-8)
-  Process: 620609@landmark-lv-02 [10.57.0.136]
+  Process: 623371@landmark-lv-02 [10.57.0.136]
   CPUs: 180 - Mem: 377.6 GB (302.6 GB) - Swap: 0 (0)
-Dec-11 10:42:42.527 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
-Dec-11 10:42:42.544 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Dec-11 10:42:42.552 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Dec-11 10:42:42.556 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Dec-11 10:42:42.578 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Dec-11 10:42:42.587 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
-Dec-11 10:42:42.667 [main] DEBUG nextflow.Session - Session start
-Dec-11 10:42:42.898 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Dec-11 10:42:42.911 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
+Dec-11 10:51:45.963 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
+Dec-11 10:51:45.980 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-11 10:51:45.989 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-11 10:51:45.994 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Dec-11 10:51:46.015 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-11 10:51:46.024 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
+Dec-11 10:51:46.106 [main] DEBUG nextflow.Session - Session start
+Dec-11 10:51:46.388 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-11 10:51:46.400 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
 ===================================
 GWAS CSV     : /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv
 Output dir   : /home/law22/data/LIV/MTAG/Results/COVID_severity
 MTAG code    : /home/law22/data/LIV/MTAG/mtag
 
-Dec-11 10:42:43.037 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Dec-11 10:42:43.037 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-11 10:42:43.042 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Dec-11 10:42:43.048 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=180; memory=377.6 GB; capacity=180; pollInterval=100ms; dumpInterval=5m
-Dec-11 10:42:43.050 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Dec-11 10:42:43.072 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_MTAG': maxForks=0; fair=false; array=0
-Dec-11 10:42:43.099 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
-Dec-11 10:42:43.101 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Dec-11 10:42:43.105 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_MTAG
-Dec-11 10:42:43.106 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_cb00c91e59c9ea70: /home/law22/data/LIV/scripts/nextflow-project-template/main.nf
-Dec-11 10:42:43.106 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Dec-11 10:42:43.106 [main] DEBUG nextflow.Session - Session await
-Dec-11 10:42:43.327 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.329 [Task submitter] INFO  nextflow.Session - [3f/555338] Submitted process > RUN_MTAG (EPI)
-Dec-11 10:42:43.337 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.337 [Task submitter] INFO  nextflow.Session - [6c/00dfba] Submitted process > RUN_MTAG (HV_R)
-Dec-11 10:42:43.341 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.342 [Task submitter] INFO  nextflow.Session - [bd/66c017] Submitted process > RUN_MTAG (ICV)
-Dec-11 10:42:43.346 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.347 [Task submitter] INFO  nextflow.Session - [8a/0ca36c] Submitted process > RUN_MTAG (HV)
-Dec-11 10:42:43.351 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.351 [Task submitter] INFO  nextflow.Session - [6e/0a5e4c] Submitted process > RUN_MTAG (FTD)
-Dec-11 10:42:43.356 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.357 [Task submitter] INFO  nextflow.Session - [eb/48ac1c] Submitted process > RUN_MTAG (LBD)
-Dec-11 10:42:43.361 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.362 [Task submitter] INFO  nextflow.Session - [7e/60aaea] Submitted process > RUN_MTAG (SCV)
-Dec-11 10:42:43.366 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.367 [Task submitter] INFO  nextflow.Session - [79/a2dda3] Submitted process > RUN_MTAG (HL)
-Dec-11 10:42:43.371 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.372 [Task submitter] INFO  nextflow.Session - [11/1cdd56] Submitted process > RUN_MTAG (AD)
-Dec-11 10:42:43.376 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.377 [Task submitter] INFO  nextflow.Session - [63/743d7a] Submitted process > RUN_MTAG (NDD)
-Dec-11 10:42:43.384 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.387 [Task submitter] INFO  nextflow.Session - [bb/5cdea8] Submitted process > RUN_MTAG (ALS)
-Dec-11 10:42:43.391 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.391 [Task submitter] INFO  nextflow.Session - [53/a8ef43] Submitted process > RUN_MTAG (PD)
-Dec-11 10:42:43.399 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.401 [Task submitter] INFO  nextflow.Session - [e7/c623b1] Submitted process > RUN_MTAG (CBV)
-Dec-11 10:42:43.410 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 10:42:43.411 [Task submitter] INFO  nextflow.Session - [fb/db4c18] Submitted process > RUN_MTAG (HV_L)
-Dec-11 10:43:03.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: RUN_MTAG (SCV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/7e/60aaea369f3b69387ed3ba61910621]
-Dec-11 10:43:03.236 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-11 10:43:03.247 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (SCV)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/7e/60aaea369f3b69387ed3ba61910621/SCV_MTAG` (pattern: `SCV_MTAG`)
-Dec-11 10:43:03.253 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (SCV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/7e/60aaea369f3b69387ed3ba61910621
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `SCV_MTAG` expected by process `RUN_MTAG (SCV)`
-Dec-11 10:43:03.258 [TaskFinalizer-1] INFO  nextflow.processor.TaskProcessor - [7e/60aaea] NOTE: Missing output file(s) `SCV_MTAG` expected by process `RUN_MTAG (SCV)` -- Error is ignored
-Dec-11 10:43:03.342 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: RUN_MTAG (AD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/11/1cdd561d2b15f4a39508f053e613da]
-Dec-11 10:43:03.343 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (AD)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/11/1cdd561d2b15f4a39508f053e613da/AD_MTAG` (pattern: `AD_MTAG`)
-Dec-11 10:43:03.345 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (AD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/11/1cdd561d2b15f4a39508f053e613da
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `AD_MTAG` expected by process `RUN_MTAG (AD)`
-Dec-11 10:43:03.345 [TaskFinalizer-2] INFO  nextflow.processor.TaskProcessor - [11/1cdd56] NOTE: Missing output file(s) `AD_MTAG` expected by process `RUN_MTAG (AD)` -- Error is ignored
-Dec-11 10:43:03.381 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: RUN_MTAG (LBD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/eb/48ac1c4c969337774e5376fde563cf]
-Dec-11 10:43:03.382 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: RUN_MTAG (HV_L); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/fb/db4c182660985ac6a89d89d002b585]
-Dec-11 10:43:03.382 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (LBD)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/eb/48ac1c4c969337774e5376fde563cf/LBD_MTAG` (pattern: `LBD_MTAG`)
-Dec-11 10:43:03.383 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (HV_L)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/fb/db4c182660985ac6a89d89d002b585/HV_L_MTAG` (pattern: `HV_L_MTAG`)
-Dec-11 10:43:03.383 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (LBD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/eb/48ac1c4c969337774e5376fde563cf
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `LBD_MTAG` expected by process `RUN_MTAG (LBD)`
-Dec-11 10:43:03.384 [TaskFinalizer-3] INFO  nextflow.processor.TaskProcessor - [eb/48ac1c] NOTE: Missing output file(s) `LBD_MTAG` expected by process `RUN_MTAG (LBD)` -- Error is ignored
-Dec-11 10:43:03.384 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HV_L); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/fb/db4c182660985ac6a89d89d002b585
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `HV_L_MTAG` expected by process `RUN_MTAG (HV_L)`
-Dec-11 10:43:03.385 [TaskFinalizer-4] INFO  nextflow.processor.TaskProcessor - [fb/db4c18] NOTE: Missing output file(s) `HV_L_MTAG` expected by process `RUN_MTAG (HV_L)` -- Error is ignored
-Dec-11 10:43:03.404 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: RUN_MTAG (ALS); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/bb/5cdea8cc13a053b3eb0a3b4afd816b]
-Dec-11 10:43:03.405 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (ALS)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/bb/5cdea8cc13a053b3eb0a3b4afd816b/ALS_MTAG` (pattern: `ALS_MTAG`)
-Dec-11 10:43:03.406 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (ALS); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/bb/5cdea8cc13a053b3eb0a3b4afd816b
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `ALS_MTAG` expected by process `RUN_MTAG (ALS)`
-Dec-11 10:43:03.406 [TaskFinalizer-5] INFO  nextflow.processor.TaskProcessor - [bb/5cdea8] NOTE: Missing output file(s) `ALS_MTAG` expected by process `RUN_MTAG (ALS)` -- Error is ignored
-Dec-11 10:43:03.509 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: RUN_MTAG (EPI); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/3f/5553383bdb74959ea4e2479be1ffc1]
-Dec-11 10:43:03.510 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (EPI)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/3f/5553383bdb74959ea4e2479be1ffc1/EPI_MTAG` (pattern: `EPI_MTAG`)
-Dec-11 10:43:03.511 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (EPI); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/3f/5553383bdb74959ea4e2479be1ffc1
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `EPI_MTAG` expected by process `RUN_MTAG (EPI)`
-Dec-11 10:43:03.511 [TaskFinalizer-6] INFO  nextflow.processor.TaskProcessor - [3f/555338] NOTE: Missing output file(s) `EPI_MTAG` expected by process `RUN_MTAG (EPI)` -- Error is ignored
-Dec-11 10:43:03.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: RUN_MTAG (CBV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/e7/c623b1408fd0245d2ecad318ead3d6]
-Dec-11 10:43:03.633 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (CBV)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/e7/c623b1408fd0245d2ecad318ead3d6/CBV_MTAG` (pattern: `CBV_MTAG`)
-Dec-11 10:43:03.634 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (CBV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/e7/c623b1408fd0245d2ecad318ead3d6
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `CBV_MTAG` expected by process `RUN_MTAG (CBV)`
-Dec-11 10:43:03.635 [TaskFinalizer-7] INFO  nextflow.processor.TaskProcessor - [e7/c623b1] NOTE: Missing output file(s) `CBV_MTAG` expected by process `RUN_MTAG (CBV)` -- Error is ignored
-Dec-11 10:43:03.644 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: RUN_MTAG (HV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/8a/0ca36c7b6364ea2607db66a29f3b6e]
-Dec-11 10:43:03.645 [TaskFinalizer-8] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (HV)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/8a/0ca36c7b6364ea2607db66a29f3b6e/HV_MTAG` (pattern: `HV_MTAG`)
-Dec-11 10:43:03.646 [TaskFinalizer-8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/8a/0ca36c7b6364ea2607db66a29f3b6e
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `HV_MTAG` expected by process `RUN_MTAG (HV)`
-Dec-11 10:43:03.647 [TaskFinalizer-8] INFO  nextflow.processor.TaskProcessor - [8a/0ca36c] NOTE: Missing output file(s) `HV_MTAG` expected by process `RUN_MTAG (HV)` -- Error is ignored
-Dec-11 10:43:03.658 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: RUN_MTAG (ICV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/bd/66c0176763b93c9030bef142f5ef37]
-Dec-11 10:43:03.659 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (ICV)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/bd/66c0176763b93c9030bef142f5ef37/ICV_MTAG` (pattern: `ICV_MTAG`)
-Dec-11 10:43:03.660 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: RUN_MTAG (HV_R); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/6c/00dfba5dd579457b2c6c38d0da066a]
-Dec-11 10:43:03.660 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (ICV); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/bd/66c0176763b93c9030bef142f5ef37
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `ICV_MTAG` expected by process `RUN_MTAG (ICV)`
-Dec-11 10:43:03.660 [TaskFinalizer-9] INFO  nextflow.processor.TaskProcessor - [bd/66c017] NOTE: Missing output file(s) `ICV_MTAG` expected by process `RUN_MTAG (ICV)` -- Error is ignored
-Dec-11 10:43:03.661 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (HV_R)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/6c/00dfba5dd579457b2c6c38d0da066a/HV_R_MTAG` (pattern: `HV_R_MTAG`)
-Dec-11 10:43:03.662 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HV_R); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/6c/00dfba5dd579457b2c6c38d0da066a
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `HV_R_MTAG` expected by process `RUN_MTAG (HV_R)`
-Dec-11 10:43:03.662 [TaskFinalizer-10] INFO  nextflow.processor.TaskProcessor - [6c/00dfba] NOTE: Missing output file(s) `HV_R_MTAG` expected by process `RUN_MTAG (HV_R)` -- Error is ignored
-Dec-11 10:43:03.723 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: RUN_MTAG (FTD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/6e/0a5e4cf4ae5984175b42d2ea7dfbe0]
-Dec-11 10:43:03.723 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (FTD)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/6e/0a5e4cf4ae5984175b42d2ea7dfbe0/FTD_MTAG` (pattern: `FTD_MTAG`)
-Dec-11 10:43:03.724 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (FTD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/6e/0a5e4cf4ae5984175b42d2ea7dfbe0
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `FTD_MTAG` expected by process `RUN_MTAG (FTD)`
-Dec-11 10:43:03.724 [TaskFinalizer-1] INFO  nextflow.processor.TaskProcessor - [6e/0a5e4c] NOTE: Missing output file(s) `FTD_MTAG` expected by process `RUN_MTAG (FTD)` -- Error is ignored
-Dec-11 10:43:03.769 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: RUN_MTAG (NDD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/63/743d7abc1aa65550bf5ffd3ea53bea]
-Dec-11 10:43:03.770 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (NDD)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/63/743d7abc1aa65550bf5ffd3ea53bea/NDD_MTAG` (pattern: `NDD_MTAG`)
-Dec-11 10:43:03.771 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (NDD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/63/743d7abc1aa65550bf5ffd3ea53bea
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `NDD_MTAG` expected by process `RUN_MTAG (NDD)`
-Dec-11 10:43:03.771 [TaskFinalizer-2] INFO  nextflow.processor.TaskProcessor - [63/743d7a] NOTE: Missing output file(s) `NDD_MTAG` expected by process `RUN_MTAG (NDD)` -- Error is ignored
-Dec-11 10:43:03.814 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: RUN_MTAG (PD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/53/a8ef4370328be00974d2f801c90e76]
-Dec-11 10:43:03.814 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (PD)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/53/a8ef4370328be00974d2f801c90e76/PD_MTAG` (pattern: `PD_MTAG`)
-Dec-11 10:43:03.815 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (PD); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/53/a8ef4370328be00974d2f801c90e76
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `PD_MTAG` expected by process `RUN_MTAG (PD)`
-Dec-11 10:43:03.815 [TaskFinalizer-3] INFO  nextflow.processor.TaskProcessor - [53/a8ef43] NOTE: Missing output file(s) `PD_MTAG` expected by process `RUN_MTAG (PD)` -- Error is ignored
-Dec-11 10:43:03.826 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: RUN_MTAG (HL); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/79/a2dda364c42529aac6ce674438996e]
-Dec-11 10:43:03.826 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process `RUN_MTAG (HL)` is unable to find [UnixPath]: `/home/law22/data/LIV/scripts/nextflow-project-template/work/79/a2dda364c42529aac6ce674438996e/HL_MTAG` (pattern: `HL_MTAG`)
-Dec-11 10:43:03.827 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=RUN_MTAG (HL); work-dir=/home/law22/data/LIV/scripts/nextflow-project-template/work/79/a2dda364c42529aac6ce674438996e
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `HL_MTAG` expected by process `RUN_MTAG (HL)`
-Dec-11 10:43:03.828 [TaskFinalizer-4] INFO  nextflow.processor.TaskProcessor - [79/a2dda3] NOTE: Missing output file(s) `HL_MTAG` expected by process `RUN_MTAG (HL)` -- Error is ignored
-Dec-11 10:43:03.832 [main] DEBUG nextflow.Session - Session await > all processes finished
-Dec-11 10:43:03.927 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Dec-11 10:43:03.927 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Dec-11 10:43:03.929 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Dec-11 10:43:03.934 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=14; ignoredCount=14; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=4m 42s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=14; peakCpus=14; peakMemory=0; ]
-Dec-11 10:43:04.125 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Dec-11 10:43:04.135 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Dec-11 10:43:04.135 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Dec-11 10:51:46.529 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-11 10:51:46.529 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-11 10:51:46.534 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-11 10:51:46.540 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=180; memory=377.6 GB; capacity=180; pollInterval=100ms; dumpInterval=5m
+Dec-11 10:51:46.542 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Dec-11 10:51:46.564 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_MTAG': maxForks=0; fair=false; array=0
+Dec-11 10:51:46.589 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
+Dec-11 10:51:46.591 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Dec-11 10:51:46.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_MTAG
+Dec-11 10:51:46.596 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_bb433168a3086fe8: /home/law22/data/LIV/scripts/nextflow-project-template/main.nf
+Dec-11 10:51:46.596 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-11 10:51:46.596 [main] DEBUG nextflow.Session - Session await
+Dec-11 10:51:46.679 [Actor Thread 23] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (EPI); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (EPI)` script contains error(s)
+Dec-11 10:51:46.702 [Actor Thread 23] ERROR nextflow.processor.TaskProcessor - Error executing process > 'RUN_MTAG (EPI)'
+
+Caused by:
+  No signature of method: nextflow.script.ScriptBinding.publishDir() is applicable for argument types: () values: []
+  Possible solutions: _publish_(java.lang.String, java.lang.Object) -- Check script 'main.nf' at line: 79
+
+
+Source block:
+  """
+  mkdir -p ${outdir}
+  
+  python ${params.mtag_dir}/mtag.py \
+      --sumstats ${infl_gwas},${brain_gwas} \
+      --out ${outdir} \
+      --snp_name ${params.snp} \
+      --a1_name ${params.a1} \
+      --a2_name ${params.a2} \
+      --z_name ${params.z} \
+      --n_name ${params.n} \
+      --maf_min ${params.maf_min} \
+      --stream_stdout \
+      --force
+  """
+  publishDir "${outdir}", mode: 'copy'
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Dec-11 10:51:46.705 [Actor Thread 23] DEBUG nextflow.Session - Session aborted -- Cause: Process `RUN_MTAG (EPI)` script contains error(s)
+Dec-11 10:51:46.716 [Actor Thread 23] DEBUG nextflow.Session - The following nodes are still active:
+[process] RUN_MTAG
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Dec-11 10:51:46.720 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-11 10:51:46.720 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-11 10:51:46.720 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Dec-11 10:51:46.721 [Actor Thread 30] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (NDD); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (NDD)` script contains error(s)
+Dec-11 10:51:46.723 [Actor Thread 8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Dec-11 10:51:46.724 [Actor Thread 34] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (SCV); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (SCV)` script contains error(s)
+Dec-11 10:51:46.725 [Actor Thread 10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (AD); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (AD)` script contains error(s)
+Dec-11 10:51:46.725 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-11 10:51:46.725 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (HV_R); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (HV_R)` script contains error(s)
+Dec-11 10:51:46.726 [Actor Thread 19] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (HL); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (HL)` script contains error(s)
+Dec-11 10:51:46.727 [Actor Thread 28] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (PD); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (PD)` script contains error(s)
+Dec-11 10:51:46.727 [Actor Thread 14] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (HV); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (HV)` script contains error(s)
+Dec-11 10:51:46.728 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (HV_L); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (HV_L)` script contains error(s)
+Dec-11 10:51:46.728 [Actor Thread 26] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (ALS); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (ALS)` script contains error(s)
+Dec-11 10:51:46.729 [Actor Thread 12] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (ICV); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (ICV)` script contains error(s)
+Dec-11 10:51:46.729 [Actor Thread 32] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (LBD); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (LBD)` script contains error(s)
+Dec-11 10:51:46.730 [Actor Thread 21] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (FTD); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (FTD)` script contains error(s)
+Dec-11 10:51:46.730 [Actor Thread 24] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_MTAG (CBV); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `RUN_MTAG (CBV)` script contains error(s)
+Dec-11 10:51:46.913 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-11 10:51:46.925 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

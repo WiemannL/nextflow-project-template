@@ -57,16 +57,18 @@ process RUN_MTAG {
     tuple val(infl_gwas), val(brain_gwas), val(brain_trait), val(outdir)
 
     output:
-    path "${outdir}/**"
-    errorStrategy 'ignore' 
+    path "mtag_output"
+
+    errorStrategy 'ignore'
+    publishDir "${outdir}", mode: 'copy'
 
     script:
     """
-    mkdir -p ${outdir}
-    
+    mkdir -p mtag_output
+
     python ${params.mtag_dir}/mtag.py \
         --sumstats ${infl_gwas},${brain_gwas} \
-        --out ${outdir} \
+        --out mtag_output/${brain_trait} \
         --snp_name ${params.snp} \
         --a1_name ${params.a1} \
         --a2_name ${params.a2} \
@@ -76,7 +78,9 @@ process RUN_MTAG {
         --stream_stdout \
         --force
     """
+
 }
+
 
 workflow {
     RUN_MTAG(pairwise_inputs)

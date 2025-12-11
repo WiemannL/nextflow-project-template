@@ -8,14 +8,15 @@ Files created:
 - `modules/hello/hello.nf` — example module and process.
 
 Quick start
+1. Clone mtag github repository https://github.com/JonJala/mtag
 
-1. Create a `samples.csv` file with a header containing: 
+2. Create a `samples.csv` file with a header containing: 
 inflammation_gwas and brain_gwas
 path_inflammation, path_braintrait
 
 This creates a row for each MTAG pair. 
 
-2. Run the pipeline locally:
+3. Run the pipeline locally:
 
 ```bash
 nextflow run main.nf \

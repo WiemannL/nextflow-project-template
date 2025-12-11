@@ -1,6 +1,6 @@
-Nextflow skeleton template 
+Nextflow MTAG wrapper
 
-This repository provides a minimal Nextflow (DSL2) skeleton to bootstrap a pipeline similar in structure to scQC-flow.
+This repository provides a Nextflow skeleton to run pairwise MTAG between an inflammation GWAS and multiple brain GWAS.
 
 Files created:
 - `main.nf` — pipeline entrypoint (DSL2) and minimal workflow that calls `modules/hello`.
@@ -9,11 +9,11 @@ Files created:
 
 Quick start
 
-1. Create a `samples.csv` file with a header `name` containing sample names, e.g.:
+1. Create a `samples.csv` file with a header containing: 
+inflammation_gwas and brain_gwas
+path_inflammation, path_braintrait
 
-   name
-   sample1
-   sample2
+This creates a row for each MTAG pair. 
 
 2. Run the pipeline locally:
 
@@ -21,4 +21,3 @@ Quick start
 nextflow run main.nf --samples samples.csv -profile standard
 ```
 
-This skeleton is intentionally minimal. To expand it, add modules under `modules/` (dropletqc, scdbl, seurat, reports), copy their processes into separate `.nf` files, and wire channels in `main.nf` as done in the original project.

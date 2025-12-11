@@ -57,11 +57,13 @@ process RUN_MTAG {
     tuple val(infl_gwas), val(brain_gwas), val(brain_trait), val(outdir)
 
     output:
-    path "${brain_trait}_MTAG"
+    path "${outdir}/**"
     errorStrategy 'ignore' 
 
     script:
     """
+    mkdir -p ${outdir}
+    
     python ${params.mtag_dir}/mtag.py \
         --sumstats ${infl_gwas},${brain_gwas} \
         --out ${outdir} \

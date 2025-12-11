@@ -1,0 +1,89 @@
+Dec-11 10:19:45.909 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_severity --mtag_dir /home/law22/data/LIV/MTAG/mtag
+Dec-11 10:19:45.984 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Dec-11 10:19:46.005 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Dec-11 10:19:46.027 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-11 10:19:46.028 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-11 10:19:46.030 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-11 10:19:46.040 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-11 10:19:46.060 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 10:19:46.062 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 10:19:46.086 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
+Dec-11 10:19:46.089 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@30135202] - activable => nextflow.secret.LocalSecretsProvider@30135202
+Dec-11 10:19:46.102 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-11 10:19:46.613 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Dec-11 10:19:46.625 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [loving_hamilton] DSL2 - revision: d9214a768c
+Dec-11 10:19:46.626 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-11 10:19:46.626 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-11 10:19:46.672 [main] DEBUG nextflow.Session - Session UUID: 4244e9f9-f297-4f67-ba0b-9f018019388f
+Dec-11 10:19:46.672 [main] DEBUG nextflow.Session - Run name: loving_hamilton
+Dec-11 10:19:46.672 [main] DEBUG nextflow.Session - Executor pool size: 180
+Dec-11 10:19:46.680 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-11 10:19:46.685 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-11 10:19:46.704 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 6.14.0-33-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-125.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 612343@landmark-lv-02 [10.57.0.136]
+  CPUs: 180 - Mem: 377.6 GB (303 GB) - Swap: 0 (0)
+Dec-11 10:19:46.726 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
+Dec-11 10:19:46.744 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-11 10:19:46.752 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-11 10:19:46.757 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Dec-11 10:19:46.779 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-11 10:19:46.788 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
+Dec-11 10:19:46.973 [main] DEBUG nextflow.Session - Session start
+Dec-11 10:19:47.172 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-11 10:19:47.185 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
+===================================
+GWAS CSV     : /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv
+Output dir   : /home/law22/data/LIV/MTAG/Results/COVID_severity
+MTAG code    : /home/law22/data/LIV/MTAG/mtag
+
+Dec-11 10:19:47.264 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
+Dec-11 10:19:47.266 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Dec-11 10:19:47.271 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_56af3e7117bb5d54: /home/law22/data/LIV/scripts/nextflow-project-template/main.nf
+Dec-11 10:19:47.271 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-11 10:19:47.271 [main] DEBUG nextflow.Session - Session await
+Dec-11 10:19:47.271 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-11 10:19:47.271 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-11 10:19:47.286 [Actor Thread 4] ERROR nextflow.extension.OperatorImpl - @unknown
+java.lang.NullPointerException: Cannot invoke method replaceAll() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:113)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_56af3e7117bb5d54$_runScript_closure1.doCall(Script_56af3e7117bb5d54:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.extension.MapOp$_apply_closure1.doCall(MapOp.groovy:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
+	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
+	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
+	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
+	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
+	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Dec-11 10:19:47.293 [Actor Thread 4] DEBUG nextflow.Session - Session aborted -- Cause: Cannot invoke method replaceAll() on null object
+Dec-11 10:19:47.307 [Actor Thread 4] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+
+Dec-11 10:19:47.317 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-11 10:19:47.382 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-11 10:19:47.395 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

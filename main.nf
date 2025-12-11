@@ -58,6 +58,7 @@ process RUN_MTAG {
 
     output:
     path "${brain_trait}_MTAG"
+    errorStrategy 'ignore' 
 
     script:
     """

@@ -32,16 +32,16 @@ MTAG code    : ${params.mtag_dir}
 Channel
     .fromPath(params.samples)
     .splitCsv(header:true)
+    // trim spaces in header and values
+    .map { row -> row.collectEntries { k,v -> [(k.trim()): v?.trim()] } }
     .map { row ->
-
-        // Derive brain name automatically
-        def brain_name = row.brain_gwas.replaceAll(/.*\//,'').replace('.txt','')
-
+        def brain_name = row.brain_gwas.tokenize('/').last().replace('.txt','')
+        def brain_trait = row.brain_trait ?: brain_name
         tuple(
             row.inflammation_gwas,
             row.brain_gwas,
-            row.brain_trait,
-            "${params.outdir}/${brain_name}_MTAG"
+            brain_trait,
+            "${params.outdir}/${brain_trait}_MTAG"
         )
     }
     .set { pairwise_inputs }
@@ -63,7 +63,7 @@ process RUN_MTAG {
     """
     python ${params.mtag_dir}/mtag.py \
         --sumstats ${infl_gwas},${brain_gwas} \
-        --out ${brain_trait}_MTAG/${brain_trait} \
+        --out ${outdir} \
         --snp_name ${params.snp} \
         --a1_name ${params.a1} \
         --a2_name ${params.a2} \

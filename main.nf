@@ -74,3 +74,7 @@ process RUN_MTAG {
         --force
     """
 }
+
+workflow {
+    RUN_MTAG(pairwise_inputs)
+}

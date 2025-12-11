@@ -13,6 +13,15 @@ params.z   = "Z"
 params.n   = "N"
 params.maf_min = 0.01
 
+log.info """\
+        MTAG-flow - Pairwise MTAG PIPELINE
+         ===================================
+         GWAS CSV     : ${samples.csv}
+         Output dir   : ${params.outdir}
+         """
+         .stripIndent()
+
+
 
 // Read the CSV file
 Channel

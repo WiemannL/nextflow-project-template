@@ -1,30 +1,66 @@
+
+#!/usr/bin/env nextflow
 nextflow.enable.dsl=2
 
-// include the hello process from the example module
-include { MTAG_Process } from './modules/hello/MTAG'
+params.samples = params.samples ?: "samples.csv"
+params.outdir  = params.outdir  ?: "results"
+params.mtag_script = params.mtag_script ?: "mtag.py"
 
-// Default parameters
-params.samples = "samples.csv"
-params.outputDir = "results"
-params.help = false
+params.snp = "SNP"
+params.a1  = "A1"
+params.a2  = "A2"
+params.z   = "Z"
+params.n   = "N"
+params.maf_min = 0.01
 
+
+// Read the CSV file
+Channel
+    .fromPath(params.samples)
+    .splitCsv(header:true)
+    .set { sample_rows }
+
+
+// Create tuple for each MTAG pairing
+pairwise_inputs = sample_rows.map { row ->
+
+    def brain_name = row.brain_gwas.replaceAll(/.*\//,'').replace('.txt','')
+
+    tuple(
+        row.inflammation_gwas,
+        row.brain_gwas,
+        "${params.outdir}/${brain_name}_MTAG"
+    )
+}
+
+
+process RUN_MTAG {
+
+    tag { outprefix }
+
+    input:
+    tuple val(infl_gwas),
+          val(brain_gwas),
+          val(outprefix)
+
+    output:
+    file("${outprefix}*") into mtag_results
+
+    script:
+    """
+    run_mtag.sh \
+        ${params.mtag_script} \
+        "${infl_gwas},${brain_gwas}" \
+        ${outprefix} \
+        ${params.snp} \
+        ${params.a1} \
+        ${params.a2} \
+        ${params.z} \
+        ${params.n} \
+        ${params.maf_min}
+    """
+}
 
 workflow {
-    if (params.help) {
-        println "Usage: nextflow run main.nf --samples samples.csv"
-        exit 0
-    }
-
-    // simple samples channel: read CSV with header `name` or fallback to built-in example
-    def samples_ch = Channel
-        .fromPath(params.samples)
-        .ifEmpty { Channel.of([['name':'example']]) }
-        .splitCsv(header:true)
-        .map { row -> row.name }
-
-    // call the HELLO_PROCESS for each sample name (process expects a channel of vals)
-    hello_out = HELLO_PROCESS(samples_ch)
-
-    // publish greetings — this will print the produced path(s)
-    hello_out.view()
+    RUN_MTAG(pairwise_inputs)
 }

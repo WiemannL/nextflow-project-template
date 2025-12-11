@@ -1,7 +1,7 @@
 nextflow.enable.dsl=2
 
 // include the hello process from the example module
-include { HELLO_PROCESS } from './modules/hello/hello'
+include { MTAG_Process } from './modules/hello/MTAG'
 
 // Default parameters
 params.samples = "samples.csv"

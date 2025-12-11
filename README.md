@@ -18,6 +18,9 @@ This creates a row for each MTAG pair.
 2. Run the pipeline locally:
 
 ```bash
-nextflow run main.nf --samples samples.csv -profile standard
+nextflow run main.nf \
+    --samples /pathtocsvfile/samples.csv \
+    --outdir /pathtoresults \
+    --mtag_dir /home/law22/data/LIV/MTAG/mtag
 ```
 

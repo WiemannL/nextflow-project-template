@@ -1,109 +1,100 @@
-Dec-11 12:22:11.312 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_severity --mtag_dir /home/law22/data/LIV/MTAG/mtag
-Dec-11 12:22:11.409 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Dec-11 12:22:11.428 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Dec-11 12:22:11.450 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Dec-11 12:22:11.450 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Dec-11 12:22:11.453 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Dec-11 12:22:11.463 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Dec-11 12:22:11.480 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
-Dec-11 12:22:11.481 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
-Dec-11 12:22:11.506 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
-Dec-11 12:22:11.509 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
-Dec-11 12:22:11.521 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Dec-11 12:22:12.071 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Dec-11 12:22:12.084 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [backstabbing_brown] DSL2 - revision: 7d1c428598
-Dec-11 12:22:12.085 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Dec-11 12:22:12.085 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Dec-11 12:22:12.130 [main] DEBUG nextflow.Session - Session UUID: db14ed3e-6e24-419d-9e71-f58769cbcdd9
-Dec-11 12:22:12.130 [main] DEBUG nextflow.Session - Run name: backstabbing_brown
-Dec-11 12:22:12.131 [main] DEBUG nextflow.Session - Executor pool size: 180
-Dec-11 12:22:12.138 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Dec-11 12:22:12.143 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-11 12:22:12.162 [main] DEBUG nextflow.cli.CmdRun - 
+Dec-11 15:34:41.068 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samples /home/law22/data/LIV/MTAG/Input_files/COVID_hospitalisation.csv --outdir /home/law22/data/LIV/MTAG/Results/COVID_hospitalisation --mtag_dir /home/law22/data/LIV/MTAG/mtag
+Dec-11 15:34:41.169 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Dec-11 15:34:41.188 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/law22/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Dec-11 15:34:41.210 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-11 15:34:41.211 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-11 15:34:41.213 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-11 15:34:41.223 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-11 15:34:41.239 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 15:34:41.241 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/law22/data/LIV/scripts/nextflow-project-template/nextflow.config
+Dec-11 15:34:41.265 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/law22/.nextflow/secrets/store.json
+Dec-11 15:34:41.268 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
+Dec-11 15:34:41.280 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-11 15:34:41.795 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Dec-11 15:34:41.808 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [fabulous_celsius] DSL2 - revision: 7d1c428598
+Dec-11 15:34:41.809 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-11 15:34:41.810 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-11 15:34:41.853 [main] DEBUG nextflow.Session - Session UUID: 5d5cc18a-29f4-4ad8-bf2f-3cb096a587ed
+Dec-11 15:34:41.854 [main] DEBUG nextflow.Session - Run name: fabulous_celsius
+Dec-11 15:34:41.854 [main] DEBUG nextflow.Session - Executor pool size: 180
+Dec-11 15:34:41.861 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-11 15:34:41.866 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-11 15:34:41.885 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (12:27 BST)
   System: Linux 6.14.0-33-generic
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-125.04
   Encoding: UTF-8 (UTF-8)
-  Process: 632655@landmark-lv-02 [10.57.0.136]
-  CPUs: 180 - Mem: 377.6 GB (285.7 GB) - Swap: 0 (0)
-Dec-11 12:22:12.181 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
-Dec-11 12:22:12.198 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Dec-11 12:22:12.206 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Dec-11 12:22:12.210 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Dec-11 12:22:12.233 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Dec-11 12:22:12.241 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
-Dec-11 12:22:12.328 [main] DEBUG nextflow.Session - Session start
-Dec-11 12:22:12.608 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Dec-11 12:22:12.621 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
+  Process: 681834@landmark-lv-02 [10.57.0.136]
+  CPUs: 180 - Mem: 377.6 GB (259.7 GB) - Swap: 0 (0)
+Dec-11 15:34:41.904 [main] DEBUG nextflow.Session - Work-dir: /home/law22/data/LIV/scripts/nextflow-project-template/work [ext2/ext3]
+Dec-11 15:34:41.922 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-11 15:34:41.931 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-11 15:34:41.936 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Dec-11 15:34:41.958 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-11 15:34:41.967 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 181; maxThreads: 1000
+Dec-11 15:34:42.047 [main] DEBUG nextflow.Session - Session start
+Dec-11 15:34:42.331 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-11 15:34:42.344 [main] INFO  nextflow.Nextflow - MTAG-flow - Pairwise MTAG Pipeline
 ===================================
-GWAS CSV     : /home/law22/data/LIV/MTAG/Input_files/COVID_severity.csv
-Output dir   : /home/law22/data/LIV/MTAG/Results/COVID_severity
+GWAS CSV     : /home/law22/data/LIV/MTAG/Input_files/COVID_hospitalisation.csv
+Output dir   : /home/law22/data/LIV/MTAG/Results/COVID_hospitalisation
 MTAG code    : /home/law22/data/LIV/MTAG/mtag
 
-Dec-11 12:22:12.751 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Dec-11 12:22:12.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-11 12:22:12.756 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Dec-11 12:22:12.763 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=180; memory=377.6 GB; capacity=180; pollInterval=100ms; dumpInterval=5m
-Dec-11 12:22:12.765 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Dec-11 12:22:12.787 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_MTAG': maxForks=0; fair=false; array=0
-Dec-11 12:22:12.813 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
-Dec-11 12:22:12.815 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Dec-11 12:22:12.820 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_MTAG
-Dec-11 12:22:12.821 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+Dec-11 15:34:42.474 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-11 15:34:42.475 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-11 15:34:42.480 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-11 15:34:42.486 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=180; memory=377.6 GB; capacity=180; pollInterval=100ms; dumpInterval=5m
+Dec-11 15:34:42.488 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Dec-11 15:34:42.510 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_MTAG': maxForks=0; fair=false; array=0
+Dec-11 15:34:42.536 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RUN_MTAG
+Dec-11 15:34:42.537 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Dec-11 15:34:42.543 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_MTAG
+Dec-11 15:34:42.543 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Script_54e00de22a50c14b: /home/law22/data/LIV/scripts/nextflow-project-template/main.nf
-Dec-11 12:22:12.821 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Dec-11 12:22:12.821 [main] DEBUG nextflow.Session - Session await
-Dec-11 12:22:13.043 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.045 [Task submitter] INFO  nextflow.Session - [18/7544f5] Submitted process > RUN_MTAG (AD)
-Dec-11 12:22:13.053 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.054 [Task submitter] INFO  nextflow.Session - [7a/2e789e] Submitted process > RUN_MTAG (SCV)
-Dec-11 12:22:13.058 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.059 [Task submitter] INFO  nextflow.Session - [2a/5b3c4f] Submitted process > RUN_MTAG (CBV)
-Dec-11 12:22:13.063 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.063 [Task submitter] INFO  nextflow.Session - [ca/0ba482] Submitted process > RUN_MTAG (HV)
-Dec-11 12:22:13.067 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.068 [Task submitter] INFO  nextflow.Session - [48/aadd8d] Submitted process > RUN_MTAG (HL)
-Dec-11 12:22:13.071 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.071 [Task submitter] INFO  nextflow.Session - [a3/4a016e] Submitted process > RUN_MTAG (ALS)
-Dec-11 12:22:13.076 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.076 [Task submitter] INFO  nextflow.Session - [5f/65268e] Submitted process > RUN_MTAG (HV_R)
-Dec-11 12:22:13.080 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.080 [Task submitter] INFO  nextflow.Session - [ac/6eb3cf] Submitted process > RUN_MTAG (NDD)
-Dec-11 12:22:13.084 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.084 [Task submitter] INFO  nextflow.Session - [3c/937903] Submitted process > RUN_MTAG (HV_L)
-Dec-11 12:22:13.089 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.092 [Task submitter] INFO  nextflow.Session - [55/6decaa] Submitted process > RUN_MTAG (EPI)
-Dec-11 12:22:13.100 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.107 [Task submitter] INFO  nextflow.Session - [08/c5f9e6] Submitted process > RUN_MTAG (LBD)
-Dec-11 12:22:13.115 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.116 [Task submitter] INFO  nextflow.Session - [0d/80b3d1] Submitted process > RUN_MTAG (ICV)
-Dec-11 12:22:13.129 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.155 [Task submitter] INFO  nextflow.Session - [95/4ea8bc] Submitted process > RUN_MTAG (PD)
-Dec-11 12:22:13.169 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-11 12:22:13.172 [Task submitter] INFO  nextflow.Session - [23/f29d28] Submitted process > RUN_MTAG (FTD)
-Dec-11 12:22:28.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: RUN_MTAG (AD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/18/7544f5f726e4f1858ea4ca27dbde09]
-Dec-11 12:22:28.351 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-11 12:22:28.377 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=540; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-11 12:22:28.382 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: RUN_MTAG (CBV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/2a/5b3c4fb1c4afa1095efca8e56b0cb5]
-Dec-11 12:22:28.423 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: RUN_MTAG (EPI); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/55/6decaac180bba83343f5d8defa0874]
-Dec-11 12:22:28.519 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: RUN_MTAG (ICV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/0d/80b3d1501710b4ccbd77ce551336f6]
-Dec-11 12:22:28.530 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: RUN_MTAG (HV_L); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/3c/937903f93e5e36ed3d9813d4480cb8]
-Dec-11 12:22:28.533 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: RUN_MTAG (NDD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/ac/6eb3cfe5d6ecaf61bd3d54ed09a37e]
-Dec-11 12:22:28.575 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: RUN_MTAG (HL); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/48/aadd8dc13425cea98d9d7cec513ef2]
-Dec-11 12:22:28.628 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: RUN_MTAG (HV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/ca/0ba48260ddbed681fd22486158329e]
-Dec-11 12:22:28.634 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: RUN_MTAG (ALS); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/a3/4a016ef91790fd5647a30a4b0fa53f]
-Dec-11 12:22:28.661 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: RUN_MTAG (HV_R); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/5f/65268e5b1debe7fb01ef3c41a0845e]
-Dec-11 12:22:28.669 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: RUN_MTAG (PD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/95/4ea8bc50959015628dbec452bdd6e6]
-Dec-11 12:22:28.685 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: RUN_MTAG (FTD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/23/f29d2821b81ea3c25ef5165d85030e]
-Dec-11 12:22:28.706 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: RUN_MTAG (SCV); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/7a/2e789ec1d15e2b1dbc93431968e957]
-Dec-11 12:22:28.725 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: RUN_MTAG (LBD); status: COMPLETED; exit: 0; error: -; workDir: /home/law22/data/LIV/scripts/nextflow-project-template/work/08/c5f9e619a70848b4e1d7088f5ec610]
-Dec-11 12:22:28.731 [main] DEBUG nextflow.Session - Session await > all processes finished
-Dec-11 12:22:28.825 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Dec-11 12:22:28.825 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Dec-11 12:22:28.828 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Dec-11 12:22:28.829 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-Dec-11 12:22:28.834 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=14; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3m 36s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=14; peakCpus=14; peakMemory=0; ]
-Dec-11 12:22:28.980 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Dec-11 12:22:28.990 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Dec-11 12:22:28.990 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Dec-11 15:34:42.543 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-11 15:34:42.543 [main] DEBUG nextflow.Session - Session await
+Dec-11 15:34:42.564 [Actor Thread 7] ERROR nextflow.extension.OperatorImpl - @unknown
+java.lang.NullPointerException: Cannot invoke method tokenize() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:113)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_54e00de22a50c14b$_runScript_closure2.doCall(Script_54e00de22a50c14b:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.extension.MapOp$_apply_closure1.doCall(MapOp.groovy:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
+	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
+	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
+	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
+	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
+	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Dec-11 15:34:42.571 [Actor Thread 7] DEBUG nextflow.Session - Session aborted -- Cause: Cannot invoke method tokenize() on null object
+Dec-11 15:34:42.585 [Actor Thread 7] DEBUG nextflow.Session - The following nodes are still active:
+[process] RUN_MTAG
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Dec-11 15:34:42.588 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-11 15:34:42.588 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-11 15:34:42.588 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Dec-11 15:34:42.592 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-11 15:34:42.779 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-11 15:34:42.794 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

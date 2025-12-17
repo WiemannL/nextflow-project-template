@@ -17,7 +17,7 @@ path_inflammation, path_braintrait
 This creates a row for each MTAG pair. 
 
 3. Run the pipeline locally:
-
+Note: can only be run in Python 2.7 environment!
 ```bash
 nextflow run main.nf \
     --samples /pathtocsvfile/samples.csv \

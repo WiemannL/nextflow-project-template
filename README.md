@@ -14,7 +14,7 @@ Quick start
 inflammation_gwas and brain_gwas
 path_inflammation, path_braintrait
 
-This creates a row for each MTAG pair. 
+This creates a row with two columns for each MTAG pair. 
 
 3. Run the pipeline locally:
 Note: can only be run in Python 2.7 environment!!
